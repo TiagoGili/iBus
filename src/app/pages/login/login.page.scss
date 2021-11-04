@@ -1,0 +1,65 @@
+img{
+    width: 160px;
+    height: 50px;
+    margin-top: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    margin-bottom: -20px;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Baloo 2', cursive;
+    font-size: 24px;
+    font-weight: 600;
+}
+ion-input{
+    margin-top: 0;
+    border: #D9D9D9 solid;
+    border-radius: 5px;
+    width: 70%;
+    height: 55px;
+    margin: 50px 15% 0 15%;
+    font-family: 'Baloo 2', cursive;
+    text-align: 0;
+    --placeholder-color: white;
+    --placeholder-opacity: 300px;
+    --placeholder-margin: 0 0 0 200px;
+    --padding-start: 5px;
+}
+ion-button{
+    margin: 15px 0 5% 15%;
+    color: black;
+    width: 70%;
+    height: 55px;
+    background: white;
+    border-radius: 5px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 900;
+    font-size: 18px;
+}
+a{
+    margin: 20% 0 0 26%;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+}
+p{
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+}
+.senha_login{
+    margin-top: 15px;
+}
+.botao_cadastro{
+    margin: -10px 0 0 20%;
+    color: black;
+    width: 60%;
+    height: 55px;
+    background: white;
+    border-radius: 5px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 900;
+    font-size: 18px;
+}

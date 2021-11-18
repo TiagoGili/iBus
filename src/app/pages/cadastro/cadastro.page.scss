@@ -1,0 +1,84 @@
+ion-content{
+    --background: #004AAD;
+    --color: white;
+
+    #body form{
+
+        ion-input{
+            --placeholder-color: black;
+            --background: white;
+            --color: black;
+        }
+    
+         .btn_cadastro{
+            color: black;
+            background: white;
+        }
+    }
+}
+
+/*ion-content{
+    --background: white;
+    --color: black;
+
+    ion-input{
+        --placeholder-color: black;
+        --background: white;
+        --color: black;
+    }
+
+    .btn_cadastro{
+        color: white;
+        background: #004AAD;
+    }
+}*/
+
+#body{
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 160px;
+    height: 50px;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+.entrar_cadastro{
+    margin: 4vh 0;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+ion-input{
+    margin: 2vh 0;
+    width: 80%;
+
+    border-radius: 5px;
+
+    font-size: 16.5px;
+}
+
+.btn_cadastro{
+    width: 60%;
+    height: 55px;
+    margin-top: 5vh;
+
+    border-radius: 5px;
+
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Baloo 2', cursive;
+}

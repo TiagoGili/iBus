@@ -1,0 +1,31 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content>-->
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+<ion-content>
+  
+  <section id="body">
+
+    <img class="logo" src="/assets/img_ibus.png">
+
+    <h2 class="entrar_cadastro">Cadastro</h2>
+
+    <form>
+      <ion-input required="true" type="text" placeholder="Nome" name="nome" [(ngModel)]="usuario.nome"></ion-input>
+      <ion-input required="true" type="email" placeholder="E-mail" name="email" [(ngModel)]="usuario.email"></ion-input>
+      <ion-input required="true" type="password" placeholder="Senha" name="senha" [(ngModel)]="usuario.senha" (ionChange)="verificarSenha()" [style.background]="corSenha"></ion-input>
+      <ion-input required="true" type="password" placeholder="Repetir senha" name="repetir_senha" [(ngModel)]="confirmarSenha" (ionChange)="verificarSenha()" [style.background]="corSenha"></ion-input>
+
+      <ion-button class="btn_cadastro" color="none" (click)="cadastrarUsuario()">Cadastrar</ion-button>
+    </form>
+  </section>
+
+</ion-content>

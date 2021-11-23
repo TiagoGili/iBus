@@ -24,6 +24,8 @@
       <ion-input required="true" type="password" placeholder="Senha" name="senha" [(ngModel)]="usuario.senha" (ionChange)="verificarSenha()" [style.background]="corSenha"></ion-input>
       <ion-input required="true" type="password" placeholder="Repetir senha" name="repetir_senha" [(ngModel)]="confirmarSenha" (ionChange)="verificarSenha()" [style.background]="corSenha"></ion-input>
 
+      <p [routerLink]="['/login']">Não possui uma conta?</p>
+
       <ion-button class="btn_cadastro" color="none" (click)="cadastrarUsuario()">Cadastrar</ion-button>
     </form>
   </section>

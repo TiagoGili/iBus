@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
 
 <ion-header>
 
@@ -24,5 +24,28 @@
   <ion-button class="botao_cadastro" href="cadastro" color="none">
     Cadastrar
   </ion-button>
+
+</ion-content>-->
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+<ion-content>
+  
+  <section id="body">
+
+    <img class="logo" src="/assets/img_ibus.png">
+
+    <h2 class="entrar_login">Entrar</h2>
+
+    <form>
+      <ion-input required="true" type="email"    placeholder = "E-mail" name="email" [(ngModel)]="login.email"></ion-input>
+      <ion-input required="true" type="password" placeholder = "Senha"  name="senha" [(ngModel)]="login.senha"></ion-input>
+
+      <p class='paragrafos'>Não possui uma conta?</p>
+      <p class='link_cadastro' [routerLink]="['/cadastro']">cadastro</p>
+
+      <ion-button class="btn_entrar" color="none" (click)="conectar()">Entrar</ion-button>
+    </form>
+  </section>
 
 </ion-content>

@@ -1,4 +1,4 @@
-ion-content{
+/*ion-content{
     --background: #004AAD;
 }
 img{
@@ -67,4 +67,116 @@ p{
     font-family: 'Baloo 2', cursive;
     font-weight: 900;
     font-size: 18px;
+}*/
+
+ion-content{
+    --background: #004AAD;
+    --color: white;
+
+    #body form{
+
+        ion-input{
+            --placeholder-color: black;
+            --background: white;
+            --color: black;
+        }
+    
+         .btn_entrar{
+            color: black;
+            background: white;
+        }
+
+        .link_cadastro {
+            color: white;
+        }
+
+        .link_cadastro:hover {
+            color: lightgray;
+        }
+    }
+}
+
+/*ion-content{
+    --background: white;
+    --color: black;
+    
+    #body form{
+        ion-input{
+            --placeholder-color: black;
+            --background: white;
+            --color: black;
+        }   
+
+        .btn_cadastro{
+            color: white;
+            background: #004AAD;
+        }
+    }
+}*/
+
+#body{
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 160px;
+    height: 50px;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+.entrar_login{
+    margin: 6vh 0;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+ion-input{
+    margin: 2.2vh 0;
+    width: 70%;
+    --padding-start: 4vw;
+    --padding-bottom: 2vh;
+    --padding-end: 2vw;
+    --padding-top: 2vh;
+
+    border-radius: 5px;
+
+    font-size: 16.5px;
+}
+
+.paragrafos{
+    margin-top: 4vh;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.link_cadastro {
+    text-decoration: underline;
+}
+
+.btn_entrar{
+    width: 60%;
+    height: 55px;
+    margin-top: 5vh;
+
+    border-radius: 5px;
+
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Baloo 2', cursive;
 }

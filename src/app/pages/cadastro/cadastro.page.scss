@@ -14,22 +14,32 @@ ion-content{
             color: black;
             background: white;
         }
+
+        p {
+            color: white;
+        }
+
+        p:hover {
+            color: lightgray;
+        }
     }
 }
-
-/*ion-content{
+ /*   
+ion-content{
     --background: white;
     --color: black;
+    
+    #body form{
+        ion-input{
+            --placeholder-color: black;
+            --background: white;
+            --color: black;
+        }   
 
-    ion-input{
-        --placeholder-color: black;
-        --background: white;
-        --color: black;
-    }
-
-    .btn_cadastro{
-        color: white;
-        background: #004AAD;
+        .btn_cadastro{
+            color: white;
+            background: #004AAD;
+        }
     }
 }*/
 
@@ -64,17 +74,21 @@ form{
 
 ion-input{
     margin: 2vh 0;
-    width: 80%;
+    width: 75%;
+    --padding-start: 4vw;
 
     border-radius: 5px;
 
     font-size: 16.5px;
 }
 
+p {
+    text-decoration: underline;
+}
+
 .btn_cadastro{
     width: 60%;
     height: 55px;
-    margin-top: 5vh;
 
     border-radius: 5px;
 

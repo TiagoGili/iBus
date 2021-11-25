@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'horarios',
     loadChildren: () => import('./pages/horarios/horarios.module').then( m => m.HorariosPageModule)
   },
+  {
+    path: 'favoritos',
+    loadChildren: () => import('./pages/favoritos/favoritos.module').then( m => m.FavoritosPageModule)
+  },
 
 
 ];

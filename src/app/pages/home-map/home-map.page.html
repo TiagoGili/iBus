@@ -6,25 +6,22 @@
 
 <ion-content>
 
-  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+  <ion-fab horizontal="start" vertical="bottom" slot="fixed">
     <ion-fab-button color="light">
-      <ion-icon md="caret-back" ios="chevron-back-circle-outline"></ion-icon>
+      <ion-icon md="caret-up" ios="chevron-up-circle-outline"></ion-icon>
     </ion-fab-button>
-    <ion-fab-list side="start">
+    <ion-fab-list side="top">
       <ion-fab-button color="light">
-        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon md="star" ios="star-outline"></ion-icon>
       </ion-fab-button>
-      <ion-fab-button color="light">
-        <ion-icon name="logo-twitter"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button color="light">
-        <ion-icon name="logo-vimeo"></ion-icon>
+      <ion-fab-button [routerLink]="['/horarios']" color="light">
+        <ion-icon md="bus" ios="bus-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
   </ion-fab>
 
   <ion-footer>
-      <ion-searchbar ></ion-searchbar>
+      <ion-searchbar placeholder="Pesquise"></ion-searchbar>
   </ion-footer>
 
   <div #map id="map">

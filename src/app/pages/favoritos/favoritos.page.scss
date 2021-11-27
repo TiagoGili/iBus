@@ -1,5 +1,19 @@
-ion-card-header{
-  width:90%;
-  float:left;
+ion-title{
+  --color: #004AAD;
+  font-weight: 600;
+}
+ion-icon, ion-back-button{
+  color: #004AAD;
 }
 
+ion-card {
+  border: solid 2px #004AAD;
+}
+
+ion-card-subtitle{
+  --color: #004AAD
+}
+
+ion-col {
+  margin: auto;
+}

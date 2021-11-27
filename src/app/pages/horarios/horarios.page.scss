@@ -1,0 +1,31 @@
+ion-title{
+    --color: #004AAD;
+    font-weight: 600;
+}
+
+ion-icon, ion-back-button{
+    color: #004AAD;
+}
+
+ion-toolbar#titulo {
+    text-align: center;
+    --background: rgb(224, 224, 224);
+}
+
+ion-toolbar#diasUteis {
+    text-align: center;
+}
+
+ion-grid#bairroTerminal {
+    background-color: #004AAD;
+
+    ion-button#bairro {
+        color: rgb(255, 255, 255);
+        --background: #0060df;
+    }
+
+    ion-button#terminal {
+        color: #0060df;
+        --background: white;
+    }
+}

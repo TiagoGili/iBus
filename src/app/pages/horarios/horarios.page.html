@@ -18,4 +18,29 @@
       <ion-select-option value="Opções5">Opções 5</ion-select-option>
     </ion-select>
   </ion-item>
+
+  <ion-card>
+    <ion-toolbar id="titulo">
+      <ion-title>Horários</ion-title>
+    </ion-toolbar>
+    <ion-toolbar id="diasUteis">
+      <ion-icon size="large" slot="start" md="chevron-back" ios="chevron-back-outline"></ion-icon>
+      <ion-title>Dias Úteis</ion-title>
+      <ion-icon size="large" slot="end" md="chevron-forward" ios="chevron-forward-outline"></ion-icon>
+    </ion-toolbar>
+    <ion-grid id="bairroTerminal" fixed>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button id="bairro" (click)="onClick()" expand="block" fill="clear" shape="round">
+            Bairro
+          </ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button id="terminal" (click)="onClick()" expand="block" shape="round">
+            Terminal
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
 </ion-content>

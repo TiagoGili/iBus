@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { AdicionarFavoritosPage } from 'src/app/modals/adicionar-favoritos/adicionar-favoritos.page';
 
 @Component({
   selector: 'app-favoritos',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoritosPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public modalController: ModalController
+  ) { }
 
   ngOnInit() {
+  }
+
+  async abrirAdicionarFavoritosPage() {
+    const modal = await this.modalController.create({
+      component: AdicionarFavoritosPage
+    });
+
+    return await modal.present();
   }
 
 }

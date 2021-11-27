@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'favoritos',
     loadChildren: () => import('./pages/favoritos/favoritos.module').then( m => m.FavoritosPageModule)
   },
+  {
+    path: 'adicionar-favoritos',
+    loadChildren: () => import('./modals/adicionar-favoritos/adicionar-favoritos.module').then( m => m.AdicionarFavoritosPageModule)
+  },
 
 
 ];

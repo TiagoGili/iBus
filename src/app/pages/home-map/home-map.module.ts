@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { HomeMapPageRoutingModule } from './home-map-routing.module';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 import { HomeMapPage } from './home-map.page';
 
@@ -15,6 +16,7 @@ import { HomeMapPage } from './home-map.page';
     IonicModule,
     HomeMapPageRoutingModule
   ],
-  declarations: [HomeMapPage]
+  declarations: [HomeMapPage],
+  providers: [Geolocation]
 })
 export class HomeMapPageModule {}

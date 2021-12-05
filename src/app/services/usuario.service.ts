@@ -11,7 +11,7 @@ export class UsuarioService {
 
   //Variáveis
   //URL: string = 'https://academicapitcc.herokuapp.com/api_academic/login/login.php';
-  URL: string = 'http://localhost/ibus/usuario/';
+  URL: string = 'http://localhost/API_iBus/tb_usuario/';
 
   constructor(
     private http: HttpClient,
@@ -21,7 +21,7 @@ export class UsuarioService {
 
   //Login
   consultar(login): Observable<any> {
-    return this.http.post(this.URL + "/login.php", login).pipe(
+    return this.http.post(this.URL + "login.php", login).pipe(
       map(retorno => retorno),
       catchError(erro => this.exibirToast(erro.error.erro, 'danger'))
     );
@@ -29,7 +29,7 @@ export class UsuarioService {
 
   //Cadastrar
   cadastrar(usuario): Observable<any> {
-    return this.http.post(this.URL + "/cadastro.php", usuario).pipe(
+    return this.http.post(this.URL + "cadastro.php", usuario).pipe(
       map(retorno => retorno),
       catchError(erro => this.exibirToast(erro.error.erro, 'danger'))
     );
